@@ -59,3 +59,32 @@ GET http://localhost:3000/api/parties
 
 ###
 GET http://localhost:3000/api/parties/65ae7e24c9bfd55a59eda335
+
+###
+DELETE http://localhost:3000/api/parties/65ae7e24c9bfd55a59eda335
+
+###
+PUT http://localhost:3000/api/parties/65ae7ebfc9bfd55a59eda337
+Content-Type: application/json
+
+{
+	"title": "Meu evento2",
+	"author": "Matheus",
+	"description": "Uma festa de aniversário",
+	"budget": 1000,
+	"image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80",
+	"services": [
+		{
+			"name": "Algum serviço 1",
+			"description": "Alguma descrição",
+			"price": 3000,
+			"image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+		},
+		{
+			"name": "Algum serviço 2",
+			"description": "Alguma descrição",
+			"price": 1600,
+			"image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+		}
+	]
+}
